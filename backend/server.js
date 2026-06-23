@@ -20,7 +20,7 @@ if (!fs.existsSync(uploadsDir)) fs.mkdirSync(uploadsDir)
 const app = express()
 
 app.use(cors({
-  origin: 'http://localhost:5173',
+  origin: ['http://localhost:5173', 'https://xpose-three.vercel.app'],
   credentials: true
 }))
 app.use(express.json())
