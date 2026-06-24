@@ -2,7 +2,7 @@ import { useNavigate, Link } from 'react-router-dom'
 import { useState, useEffect } from 'react'
 import axios from 'axios'
 
-const API = 'http://localhost:5000/api'
+const API = `${import.meta.env.VITE_API_URL}/api`
 const getToken = () => localStorage.getItem('xpose_token')
 
 /* ── tiny modal ───────────────────────────────────────── */
