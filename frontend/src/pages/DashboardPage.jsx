@@ -5,7 +5,7 @@ import { PieChart, Pie, Cell, BarChart, Bar, XAxis, YAxis, Tooltip, ResponsiveCo
 import html2canvas from 'html2canvas'
 import jsPDF from 'jspdf'
 
-const API = 'http://localhost:5000/api'
+const API = `${import.meta.env.VITE_API_URL}/api`
 const getToken = () => localStorage.getItem('xpose_token')
 
 function DashboardPage() {
